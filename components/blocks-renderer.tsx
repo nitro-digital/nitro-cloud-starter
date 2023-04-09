@@ -6,6 +6,7 @@ import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
 import { Info }  from "./blocks/info";
 import { Fullwhero } from "../components/blocks/fullwhero";
+import { Nitrohero } from "../components/blocks/nitrohero";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
@@ -65,6 +66,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                           key={i + block.__typename}
                       >
                           <Fullwhero data={block} parentField={`blocks.${i}`} />
+                      </div>
+                  );
+              case "PageBlocksNitrohero":
+                  return (
+                      <div
+                          data-tinafield={`blocks.${i}`}
+                          key={i + block.__typename}
+                      >
+                          <Nitrohero data={block} parentField={`blocks.${i}`} />
                       </div>
                   );
             default:
