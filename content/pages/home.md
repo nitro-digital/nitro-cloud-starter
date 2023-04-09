@@ -4,6 +4,9 @@ blocks:
   - tagline: fullwhero
     headline: This Big fullwherofullwhero is Totally Awesome
     text: ''
+    image:
+      src: /uploads/Group 27.jpg
+      alt: dffgf
     _template: fullwhero
   - headline: d
     title: v
@@ -62,6 +65,7 @@ blocks:
     color: tint
     _template: features
 ---
+
 
 
 
