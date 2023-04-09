@@ -24,13 +24,17 @@ blocks:
       all together in `pages/[filename].tsx`, all based on a config
       `tina/config.tsx`.
     actions:
+      - label: Action Label
+        type: button
+        icon: true
+        link: /
       - label: Get Started
         type: button
         icon: true
         link: /posts
-      - label: Read Blog
-        type: link
-        icon: false
+      - label: Read Blogfdsfsdfsdfsddssdfsdf
+        type: button
+        icon: true
         link: /posts
     image:
       src: /uploads/unsplash-75EFpyXu3Wg.jpg
@@ -65,6 +69,7 @@ blocks:
     color: tint
     _template: features
 ---
+
 
 
 
