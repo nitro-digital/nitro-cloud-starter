@@ -1,6 +1,10 @@
 ---
 title: Tina Cloud Starter
 blocks:
+  - tagline: fullwhero
+    headline: This Big fullwherofullwhero is Totally Awesome
+    text: ''
+    _template: fullwhero
   - headline: d
     title: v
     body: |
@@ -58,5 +62,6 @@ blocks:
     color: tint
     _template: features
 ---
+
 
 
