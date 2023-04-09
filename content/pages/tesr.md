@@ -12,9 +12,13 @@ blocks:
         link: /
     color: tint
     _template: nitrohero
-  - body: ''
+  - headline: fdsfds
+    title: sdfsfdsd
+    body: |
+      sdfsdfs
     _template: info
 ---
+
 
 
 
