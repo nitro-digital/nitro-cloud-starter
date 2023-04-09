@@ -1,21 +1,32 @@
 ---
 title: Tina Cloud Starter
 blocks:
-  - tagline: fullwhero
-    headline: This Big fullwherofullwhero is Totally Awesome
-    text: ''
-    image:
-      src: /uploads/Group 27.jpg
-      alt: dffgf
-    _template: fullwhero
-  - headline: d
-    title: v
-    body: |
-      adsasd
-    color: tint
-    _template: info
-  - body: ''
-    _template: content
+  - items:
+      - icon:
+          name: BiAccessibility
+          color: yellow
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+    _template: features
   - headline: Welcome to the Tina Starter
     text: >
       This project is set up to show you the basics of working with Tina. You're
@@ -24,17 +35,13 @@ blocks:
       all together in `pages/[filename].tsx`, all based on a config
       `tina/config.tsx`.
     actions:
-      - label: Action Label
-        type: button
-        icon: true
-        link: /
       - label: Get Started
         type: button
         icon: true
         link: /posts
-      - label: Read Blogfdsfsdfsdfsddssdfsdf
-        type: button
-        icon: true
+      - label: Read Blog
+        type: link
+        icon: false
         link: /posts
     image:
       src: /uploads/unsplash-75EFpyXu3Wg.jpg
@@ -69,6 +76,7 @@ blocks:
     color: tint
     _template: features
 ---
+
 
 
 
