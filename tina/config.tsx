@@ -61,8 +61,8 @@ const config = defineConfig({
           },
           {
             type: "rich-text",
-            label: "Excerpt2",
-            name: "excerpt",
+            label: "Metainfo",
+            name: "metainfo",
           },
           {
             type: "reference",
