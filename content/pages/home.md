@@ -1,6 +1,14 @@
 ---
 title: Tina Cloud Starter
 blocks:
+  - headline: d
+    title: v
+    body: |
+      adsasd
+    color: tint
+    _template: info
+  - body: ''
+    _template: content
   - headline: Welcome to the Tina Starter
     text: >
       This project is set up to show you the basics of working with Tina. You're
@@ -50,4 +58,5 @@ blocks:
     color: tint
     _template: features
 ---
+
 
