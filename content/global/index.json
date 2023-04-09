@@ -1,54 +1,54 @@
 {
-    "header": {
-        "name": "Tina Starter",
-        "icon": {
-            "color": "orange",
-            "style": "float",
-            "name": "Tina"
-        },
-        "color": "default",
-        "nav": [
-            {
-                "href": "",
-                "label": "Home"
-            },
-            {
-                "href": "about",
-                "label": "About"
-            },
-            {
-                "href": "posts",
-                "label": "Blog"
-            },
-            {
-                "href": "#rolunk",
-                "label": "Rólunk"
-            },
-            {
-                "href": "#megoldasaink",
-                "label": "Megoldásaink"
-            },
-            {
-                "href": "#munkaink",
-                "label": "Munkáink"
-            },
-            {
-                "href": "#kapcsolat",
-                "label": "Kapcsolat"
-            }
-        ]
+  "header": {
+    "icon": {
+      "name": "Tina",
+      "color": "orange",
+      "style": "float"
     },
-    "footer": {
-        "color": "default",
-        "social": {
-            "facebook": "/",
-            "twitter": "/",
-            "instagram": "/"
-        }
-    },
-    "theme": {
-        "color": "blue",
-        "font": "sans",
-        "darkMode": "system"
+    "name": "Tina Starter",
+    "color": "default",
+    "nav": [
+      {
+        "href": "",
+        "label": "Home"
+      },
+      {
+        "href": "about",
+        "label": "About"
+      },
+      {
+        "href": "posts",
+        "label": "Blog"
+      },
+      {
+        "href": "#rolunk",
+        "label": "Rólunk"
+      },
+      {
+        "href": "#megoldasaink",
+        "label": "Megoldásaink"
+      },
+      {
+        "href": "#munkaink",
+        "label": "Munkáink"
+      },
+      {
+        "href": "#kapcsolat",
+        "label": "Kapcsolat"
+      }
+    ]
+  },
+  "footer": {
+    "color": "default",
+    "social": {
+      "facebook": "/",
+      "twitter": "/",
+      "instagram": "/"
     }
+  },
+  "theme": {
+    "color": "blue",
+    "font": "roboto",
+    "darkMode": "system"
+  }
 }

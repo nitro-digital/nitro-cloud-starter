@@ -1,15 +1,50 @@
 ---
 title: Tina Cloud Starter
 blocks:
-  - tagline: fullwhero
-    headline: This Big fullwherofullwhero is Totally Awesome
-    text: ''
+  - headline: We have nitro
+    text: >
+      @nitro, we do what it takes to stay ahead of the game. Our dedicated,
+      experienced team incorporates innovative ideas and successful strategies
+      to ensure that our clients get to the top and stay there. Depends on your
+      ideas we can help you out at 360 degrees of the digital space. Tell us
+      your needs.
     image:
       src: /uploads/Group 27.jpg
-      alt: dffgf
     _template: fullwhero
-  - body: ''
-    _template: content
+  - items:
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+    _template: features
+  - tagline: aaaa
+    headline: T  wesome
+    text: ''
+    image:
+      src: /uploads/Group 28 (2).jpg
+      alt: Digital marketing
+    color: nitrogreen
+    _template: nitrohero
   - headline: Welcome to the Tina Starter
     text: >
       This project is set up to show you the basics of working with Tina. You're
@@ -66,9 +101,29 @@ blocks:
     title: v
     body: |
       adsasd
-    color: tint
+    color: primary
     _template: info
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -182,8 +182,9 @@ export const nitroheroBlockSchema: TinaTemplate = {
       name: "color",
       options: [
         { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
+        { label: "nitrogreen", value: "tint" },
         { label: "Primary", value: "primary" },
+        { label: "Nitrogreen", value: "nitrogreen" },
       ],
     },
   ],

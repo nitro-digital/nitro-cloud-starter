@@ -285,6 +285,10 @@ const config = defineConfig({
                     label: "Lato",
                     value: "lato",
                   },
+                  {
+                    label: "Roboto",
+                    value: "roboto",
+                  },
                 ],
               },
               {

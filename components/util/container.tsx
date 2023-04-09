@@ -13,12 +13,14 @@ export const Container = ({
     medium: "py-12",
     large: "py-24",
     default: "py-12",
+    navbar: "p-0",
   };
   const widthClass = {
     small: "max-w-4xl",
     medium: "max-w-5xl",
     large: "max-w-7xl",
     custom: "",
+    navbar: "w-full",
   };
 
   return (
