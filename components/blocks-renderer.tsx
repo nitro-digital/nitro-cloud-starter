@@ -4,6 +4,7 @@ import { Content } from "./blocks/content";
 import { Features } from "./blocks/features";
 import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
+import { Info }  from "./blocks/info";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
@@ -47,6 +48,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                   <Testimonial data={block} parentField={`blocks.${i}`} />
                 </div>
               );
+              case "PageBlocksInfo":
+                  return (
+                      <div
+                          data-tinafield={`blocks.${i}`}
+                          key={i + block.__typename}
+                      >
+                          <Info data={block} parentField={`blocks.${i}`} />
+                      </div>
+                  );
             default:
               return null;
           }
