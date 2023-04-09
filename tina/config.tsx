@@ -6,6 +6,7 @@ import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { infoBlockSchema } from "../components/blocks/info";
 import { ColorPickerInput } from "../components/fields/color";
 import { iconSchema } from "../components/util/icon";
+import { fullwheroBlockSchema } from '../components/blocks/fullwhero';
 
 const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -368,6 +369,7 @@ const config = defineConfig({
               contentBlockSchema,
               testimonialBlockSchema,
               infoBlockSchema,
+              fullwheroBlockSchema,
             ],
           },
         ],
