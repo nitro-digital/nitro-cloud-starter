@@ -8,12 +8,6 @@ blocks:
       src: /uploads/Group 27.jpg
       alt: dffgf
     _template: fullwhero
-  - headline: d
-    title: v
-    body: |
-      adsasd
-    color: tint
-    _template: info
   - body: ''
     _template: content
   - headline: Welcome to the Tina Starter
@@ -68,7 +62,14 @@ blocks:
           color, font, or icon set.
     color: tint
     _template: features
+  - headline: dasdassdasdas
+    title: v
+    body: |
+      adsasd
+    color: tint
+    _template: info
 ---
+
 
 
 

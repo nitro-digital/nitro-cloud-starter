@@ -8,6 +8,7 @@ export const Info = ({ data, parentField = "" }) => {
   return (
     <Section color={data.color}>
       <Container
+        id="kapcsolat"
         className={`prose prose-lg ${
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
