@@ -234,15 +234,15 @@ module.exports = {
         },
         blink: {
           "50%": {
-            borderColor: "transparent"
+            borderColor: "white"
           },
           "100%": {
-            borderColor: "white"
+            borderColor: "transparent"
           }
         }
       },
       animation: {
-        typing: "typing 3s steps(20) alternate, blink .7s alternate"
+        typing: "typing 1s steps(13) alternate"
       },
     },
   },
