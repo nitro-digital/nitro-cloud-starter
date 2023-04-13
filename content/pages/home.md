@@ -60,7 +60,16 @@ blocks:
       web-based solution.*
     color: default
     _template: info
+  - headline: Where are we?
+    title: contact us
+    body: |
+      Here you can contact us:
+      info@nitrodigital.io
+    color: nitrogreen
+    _template: info
 ---
+
+
 
 
 

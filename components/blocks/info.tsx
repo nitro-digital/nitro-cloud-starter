@@ -19,7 +19,11 @@ export const Info = ({ data, parentField = "" }) => {
           {data.headline}
         </h1>
         <p className="text-5xl text-center underline-offset-[3px]">{data.title}</p>
-        <TinaMarkdown content={data.body} />
+        <div className={`${
+          data.color === "nitrogreen" ? `text-center justify-center ` : `py-3`
+        }`}>
+          <TinaMarkdown content={data.body} />
+        </div>
       </Container>
     </Section>
   );
