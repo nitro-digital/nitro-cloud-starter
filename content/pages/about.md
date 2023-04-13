@@ -10,49 +10,35 @@ blocks:
     digitalstrategytext: >
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).
+      digital globe (from the metaverse to the 
     consulting: Consulting
     consultingtext: >
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).We're a passionate team about all around the digital globe (from the
+      digital globe (from the metaverse to the We're a passionate team about all
+      around the digital globe (from the metaverse to the classic web).We're a
+      passionate team about all around the digital globe (from the metaverse to
+      the We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).
+      digital globe (from the metaverse to the 
     projectmanagement: Project management
     projectmanagementtext: >
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).
+      digital globe (from the metaverse to the We're a passionate team about all
+      around the digital globe (from the metaverse to the classic web).We're a
+      passionate team about all around the digital globe (from the metaverse to
+      the 
     pr: 'Communication, PR'
     prtext: >
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).We're a passionate team about all around the
-      digital globe (from the metaverse to the classic web).We're a passionate
-      team about all around the digital globe (from the metaverse to the classic
-      web).We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).
+      digital globe (from the metaverse to the We're a passionate team about all
+      around the digital globe (from the metaverse to the classic web).We're a
+      passionate team about all around the digital globe (from the metaverse to
+      the We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the 
     marketing: Marketing and social media
     marketingtext: >
       We're a passionate team about all around the digital globe (from the
@@ -80,6 +66,7 @@ blocks:
           alt: "Marketing, \LSocial media "
     _template: solutions
 ---
+
 
 
 

@@ -41,7 +41,7 @@ export const Solutions = ({ data, parentField = "" }) => {
             </div>
           </>
         )}
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-[615px] bg-[#7199C7] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-white pt-5">1.</h1>
             <div className="not-italic font-normal text-5xl text-gray-800 leading-[58px] pt-5">{data.digitalstrategy}</div>
@@ -49,9 +49,9 @@ export const Solutions = ({ data, parentField = "" }) => {
               <TinaMarkdown content={data.digitalstrategytext} />
             </div>
           </div>
-          <div className="h-[615px] bg-[#717171] md:hidden">
+          <div className="h-[615px] bg-[#717171] hidden md:flex">
           </div>
-          <div className="h-[615px] bg-[#717171] md:hidden">
+          <div className="h-[615px] bg-[#717171] hidden md:flex">
           </div>
           <div className="h-[615px] bg-[#009E97] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-white pt-5">2.</h1>
@@ -67,9 +67,10 @@ export const Solutions = ({ data, parentField = "" }) => {
               <TinaMarkdown content={data.projectmanagementtext} />
             </div>
           </div>
-          <div className="h-[615px] bg-[#717171] md:hidden">
+          <div className="h-[615px] bg-[#717171] hidden md:flex">
           </div>
-          <div className="h-[615px] bg-[#717171] md:hidden"></div>
+          <div className="h-[615px] bg-[#717171] hidden md:flex">
+          </div>
           <div className="h-[615px] bg-[#D9D9D9] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-gray-800 pt-5">4.</h1>
             <div className="not-italic font-normal text-5xl text-teal-700 leading-[58px] pt-5">{data.pr}</div>
@@ -84,7 +85,8 @@ export const Solutions = ({ data, parentField = "" }) => {
               <TinaMarkdown content={data.marketingtext} />
             </div>
           </div>
-          <div className="h-[615px] bg-[#717171]"></div>
+          <div className="h-[615px] bg-[#717171] hidden md:flex">
+          </div>
         </div>
       </Container>
     </div>
