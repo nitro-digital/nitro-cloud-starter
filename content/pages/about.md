@@ -7,11 +7,60 @@ blocks:
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).
     digitalstrategy: Digital strategy
-    digitalstrategytext: ''
-    consultingtext: ''
-    projectmanagementtext: ''
-    prtext: ''
-    marketingtext: ''
+    digitalstrategytext: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).
+    consulting: Consulting
+    consultingtext: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).
+    projectmanagement: Project management
+    projectmanagementtext: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).
+    pr: 'Communication, PR'
+    prtext: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).
+    marketing: Marketing and social media
+    marketingtext: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).We're a passionate team about all around the
+      digital globe (from the metaverse to the classic web).We're a passionate
+      team about all around the digital globe (from the metaverse to the classic
+      web).We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).
     images:
       image:
         - src: /uploads/Frame (5).svg
@@ -31,6 +80,7 @@ blocks:
           alt: "Marketing, \LSocial media "
     _template: solutions
 ---
+
 
 
 
