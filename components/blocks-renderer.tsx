@@ -7,6 +7,8 @@ import { Testimonial } from "./blocks/testimonial";
 import { Info }  from "./blocks/info";
 import { Fullwhero } from "../components/blocks/fullwhero";
 import { Nitrohero } from "../components/blocks/nitrohero";
+import { Contactus } from "../components/blocks/contactus";
+import { Solutions } from "../components/blocks/solutions";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
@@ -77,6 +79,24 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                           <Nitrohero data={block} parentField={`blocks.${i}`} />
                       </div>
                   );
+            case "PageBlocksContactus":
+              return (
+                <div
+                  data-tinafield={`blocks.${i}`}
+                  key={i + block.__typename}
+                >
+                  <Contactus data={block} parentField={`blocks.${i}`} />
+                </div>
+              );
+            case "PageBlocksSolutions":
+              return (
+                <div
+                  data-tinafield={`blocks.${i}`}
+                  key={i + block.__typename}
+                >
+                  <Solutions data={block} parentField={`blocks.${i}`} />
+                </div>
+              );
             default:
               return null;
           }

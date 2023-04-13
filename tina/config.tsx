@@ -8,6 +8,8 @@ import { ColorPickerInput } from "../components/fields/color";
 import { iconSchema } from "../components/util/icon";
 import { fullwheroBlockSchema } from '../components/blocks/fullwhero';
 import { nitroheroBlockSchema } from '../components/blocks/nitrohero';
+import { contactusBlockSchema } from "../components/blocks/contactus";
+import { solutionsBlockSchema } from "../components/blocks/solutions";
 
 const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -376,6 +378,8 @@ const config = defineConfig({
               infoBlockSchema,
               fullwheroBlockSchema,
               nitroheroBlockSchema,
+              contactusBlockSchema,
+              solutionsBlockSchema
             ],
           },
         ],

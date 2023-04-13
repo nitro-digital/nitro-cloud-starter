@@ -13,8 +13,8 @@
         "label": "Home"
       },
       {
-        "href": "about",
-        "label": "About"
+        "href": "about",    
+        "label": "Solutions"
       },
       {
         "href": "posts",
