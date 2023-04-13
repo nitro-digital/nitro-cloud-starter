@@ -31,8 +31,10 @@ export const Fullwhero = ({ data, parentField }) => {
                 data-tinafield={`${parentField}.headline`}
                 className="relative inline-block px-3 py-1 mb-8 text-4xl font-boldtext-base tracking-wide title-font z-20 bottom-1 left-1/2 -translate-x-1/2"
               >
+                <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold">{data.headline}</h1>
                 {data.headline}
               </h2>
+
               <div className="font-extralight">
               <TinaMarkdown content={data.text} />
               </div>

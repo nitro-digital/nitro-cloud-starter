@@ -49,6 +49,6 @@
   "theme": {
     "color": "blue",
     "font": "roboto",
-    "darkMode": "system"
+    "darkMode": "light"
   }
 }

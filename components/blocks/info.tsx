@@ -9,17 +9,16 @@ export const Info = ({ data, parentField = "" }) => {
     <Section color={data.color}>
       <Container
         id="kapcsolat"
-        className={`prose prose-lg ${
+        className={`py-24 ${
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tinafield={`${parentField}.body`}
-        size="large"
         width="medium"
       >
-        <h1 className={'text-xl uppercase ont-light'}>
+        <h1 className={"text-xl uppercase font-light text-center"}>
           {data.headline}
         </h1>
-        {data.title}
+        <p className="text-5xl text-center underline-offset-[3px]">{data.title}</p>
         <TinaMarkdown content={data.body} />
       </Container>
     </Section>
@@ -32,24 +31,24 @@ export const infoBlockSchema: TinaTemplate = {
   ui: {
     previewSrc: "/blocks/content.png",
     defaultItem: {
-      body: "Lorecccnon, semper suscipit, posuere a, pede.",
-    },
+      body: "Lorecccnon, semper suscipit, posuere a, pede."
+    }
   },
   fields: [
     {
       type: "string",
       label: "Headline",
-      name: "headline",
+      name: "headline"
     },
     {
       type: "string",
       label: "Title",
-      name: "title",
+      name: "title"
     },
     {
       type: "rich-text",
       label: "Body",
-      name: "body",
+      name: "body"
     },
     {
       type: "string",
@@ -59,7 +58,8 @@ export const infoBlockSchema: TinaTemplate = {
         { label: "Default", value: "default" },
         { label: "Tint", value: "tint" },
         { label: "Primary", value: "primary" },
-      ],
-    },
-  ],
+        { label: "Nitrogreen", value: "nitrogreen" }
+      ]
+    }
+  ]
 };

@@ -11,99 +11,80 @@ blocks:
     image:
       src: /uploads/Group 27.jpg
     _template: fullwhero
-  - items:
-      - icon:
-          name: ''
-          color: ''
-          style: float
-        title: Here's Another Feature
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
-      - icon:
-          name: ''
-          color: ''
-          style: float
-        title: Here's Another Feature
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
-      - icon:
-          name: ''
-          color: ''
-          style: float
-        title: Here's Another Feature
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
-    _template: features
-  - tagline: aaaa
-    headline: T  wesome
-    text: ''
+  - firstcardimage:
+      src: /uploads/Frame (4).svg
+    firstcardtitle: Kommunikáció és PR
+    firstcardtext: |
+      We can help you with digital marketing plans and projects
+    secundcardimage:
+      src: /uploads/Group 1.svg
+    secundcardtitle: 'Marketing, social és klasszikus média'
+    secundcardtext: |
+      We have an experienced social media manager team
     image:
       src: /uploads/Group 28 (2).jpg
-      alt: Digital marketing
     color: nitrogreen
     _template: nitrohero
-  - headline: Welcome to the Tina Starter
-    text: >
-      This project is set up to show you the basics of working with Tina. You're
-      looking at the landing page, which pulls content from
-      `content/pages/home.md`, components from components/blocks, and puts them
-      all together in `pages/[filename].tsx`, all based on a config
-      `tina/config.tsx`.
-    actions:
-      - label: Action Label
-        type: button
-        icon: true
-        link: /
-      - label: Get Started
-        type: button
-        icon: true
-        link: /posts
-      - label: Read Blogfdsfsdfsdfsddssdfsdf
-        type: button
-        icon: true
-        link: /posts
-    image:
-      src: /uploads/unsplash-75EFpyXu3Wg.jpg
-      alt: >-
-        Photo of palm trees at sunset by Adam Birkett -
-        unsplash.com/photos/75EFpyXu3Wg
-    color: default
-    _template: hero
   - items:
       - icon:
-          name: BiCodeBlock
-          color: red
+          name: Strategymap
+          color: ''
           style: float
-        title: Amazing Feature
-        text: >-
-          Aliquam blandit felis rhoncus, eleifend ipsum in, condimentum nibh.
-          Praesent ac faucibus risus, eu lacinia enim.
+        title: Stratégia alkotás
+        text: ''
       - icon:
-          name: BiLike
-          color: primary
+          name: Codingicon
+          color: blue
           style: float
-        title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
+        title: Tanácsadás
+        text: ''
       - icon:
-          name: BiPalette
-          color: green
+          name: Giticon
+          color: ''
           style: float
-        title: Configurable Theme
-        text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
+        title: Projektmenedzsment
+        text: |+
+
     color: tint
     _template: features
-  - headline: dasdassdasdas
-    title: v
-    body: |
-      adsasd
-    color: primary
+  - headline: Who we are
+    title: about us
+    body: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).
+
+
+      We are looking for challenges in which we can think together w*ith our
+      customers. We believe in partnership, to deliver stable solutions: whether
+      it’s a marketing campaign, a static website, or even a more sophisticated,
+      web-based solution.*
+    color: default
     _template: info
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

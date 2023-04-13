@@ -8,14 +8,14 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
   return (
     <div
       data-tinafield={tinaField}
-      className="flex-1 flex flex-col gap-6 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
+      className="flex-1 justify-center flex flex-col gap-6 text-center items-center lg:text-left max-w-xl mx-auto"
       style={{ flexBasis: "16rem" }}
     >
       {data.icon && (
         <Icon
           tinaField={`${tinaField}.icon`}
           parentColor={featuresColor}
-          data={{ size: "large", ...data.icon }}
+          data={{ size: "custom", ...data.icon }}
         />
       )}
       {data.title && (

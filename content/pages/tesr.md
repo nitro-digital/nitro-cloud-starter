@@ -1,15 +1,15 @@
 ---
 title: tesr
 blocks:
-  - tagline: Here's soxxher text
-    headline: T  wesome
-    text: |
-      fdsfds
-    actions:
-      - label: Action Label
-        type: button
-        icon: true
-        link: /
+  - firstcardtitle: Here's soxxher text
+    firstcardtext: |
+      asdasads
+    secundcardtitle: T  wesome
+    secundcardtext: |
+      sadasdad
+    image:
+      src: /uploads/Frame (1).svg
+      alt: sadasda
     color: tint
     _template: nitrohero
   - headline: fdsfds
@@ -18,6 +18,8 @@ blocks:
       sdfsdfs
     _template: info
 ---
+
+
 
 
 

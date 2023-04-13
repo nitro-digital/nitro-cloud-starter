@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Actions } from "../util/actions";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
 import { useTheme } from "../layout";
@@ -22,52 +21,77 @@ export const Nitrohero = ({ data, parentField }) => {
   return (
     <Section color={data.color}>
       <Container
-        size="large"
-        className="grid grid-cols-1 lg:grid-cols-5 gap-14 items-center justify-center"
+        size="navbar"
+        className="py-0 grid grid-cols-1 lg:grid-cols-7 gap-14 items-center justify-center p-0 m-0 py-0"
       >
-        <div className="row-start-2 lg:row-start-1 lg:col-span-3 text-center lg:text-left">
-          {data.tagline && (
-            <h2
-              data-tinafield={`${parentField}.tagline`}
-              className="relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
+        <div className="row-start-0 lg:row-start-1 lg:col-span-6 text-center lg:text-left">
+          {data.firstcardimage && (
+            <div
+              data-tinafield={`${parentField}.firstcardimage`}
+              className="relative row-start-1 lg:col-span-2 flex justify-center lg:justify-start"
             >
-              {data.tagline}
-              <span className="absolute w-full h-full left-0 top-0 rounded-full -z-1 bg-current opacity-7"></span>
-            </h2>
+
+              <img
+                className="relative z-10"
+                alt={data.firstcardimage.alt}
+                src={data.firstcardimage.src}
+              />
+            </div>
           )}
-          {data.headline && (
+          {data.firstcardtitle && (
             <h3
-              data-tinafield={`${parentField}.headline`}
-              className={`w-full relative	mb-10 text-5xl font-extrabold tracking-normal leading-tight title-font`}
+              data-tinafield={`${parentField}.firstcardtitle`}
+              className={`w-full text-white py-4`}
             >
               <span
-                className={`bg-clip-text text-transparent bg-gradient-to-r  ${
-                  data.color === "primary"
-                    ? `from-white to-gray-100`
-                    : headlineColorClasses[theme.color]
-                }`}
+                className={`bg-clip-text text-transparent text-white`}
               >
-                {data.headline}
+                {data.firstcardtitle}
               </span>
             </h3>
           )}
-          {data.text && (
+          {data.firstcardtext && (
             <div
-              data-tinafield={`${parentField}.text`}
-              className={`prose prose-lg mx-auto lg:mx-0 mb-10 ${
-                data.color === "primary" ? `prose-primary` : `dark:prose-dark`
-              }`}
+              data-tinafield={`${parentField}.firstcardtext`}
+              className={`mx-auto lg:mx-0 mb-10 text-white`}
             >
-              <TinaMarkdown content={data.text} />
+              <TinaMarkdown content={data.firstcardtext} />
             </div>
           )}
-          {data.actions && (
-            <Actions
-              parentField={`${parentField}.actions`}
-              className="justify-center lg:justify-start py-2"
-              parentColor={data.color}
-              actions={data.actions}
-            />
+        </div>
+        <div className="row-start-2 lg:row-start-1 lg:col-span-6 text-center lg:text-left">
+          {data.secundcardimage && (
+            <div
+              data-tinafield={`${parentField}.secundcardimage`}
+              className="relative row-start-1 lg:col-span-2 flex justify-center lg:justify-start"
+            >
+
+              <img
+                className="relative z-10"
+                alt={data.secundcardimage.alt}
+                src={data.secundcardimage.src}
+              />
+            </div>
+          )}
+          {data.secundcardtitle && (
+            <h3
+              data-tinafield={`${parentField}.secundcardtitle`}
+              className={`w-full text-white py-4`}
+            >
+              <span
+                className={`bg-clip-text text-transparent text-white`}
+              >
+                {data.secundcardtitle}
+              </span>
+            </h3>
+          )}
+          {data.secundcardtext && (
+            <div
+              data-tinafield={`${parentField}.secundcardtext`}
+              className={`mx-auto lg:mx-0 mb-10 text-white`}
+            >
+              <TinaMarkdown content={data.secundcardtext} />
+            </div>
           )}
         </div>
         {data.image && (
@@ -97,67 +121,66 @@ export const nitroheroBlockSchema: TinaTemplate = {
   label: "NitroHero",
   ui: {
     defaultItem: {
-      tagline: "Here's soxxher text",
-      headline: "T  wesome",
-      text: "Phasellus sxxutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+      firstcardtitle: "Kommunikáció és PR",
+      firstcardtext: "We can help you with digital marketing plans and projects",
+      secundcardtitle: "Marketing, social és klasszikus média",
+      secundcardtext:"We have an experienced social media manager team",
     },
   },
   fields: [
     {
-      type: "string",
-      label: "Tagline",
-      name: "tagline",
-    },
-    {
-      type: "string",
-      label: "Headline",
-      name: "headline",
-    },
-    {
-      label: "Text",
-      name: "text",
-      type: "rich-text",
-    },
-    {
-      label: "Actions",
-      name: "actions",
       type: "object",
-      list: true,
-      ui: {
-        defaultItem: {
-          label: "Action Label",
-          type: "button",
-          icon: true,
-          link: "/",
-        },
-        itemProps: (item) => ({ label: item.label }),
-      },
+      label: "First Card Image",
+      name: "firstcardimage",
       fields: [
         {
-          label: "Label",
-          name: "label",
-          type: "string",
+          name: "src",
+          label: "Image Source",
+          type: "image",
         },
         {
-          label: "Type",
-          name: "type",
-          type: "string",
-          options: [
-            { label: "Button", value: "button" },
-            { label: "Link", value: "link" },
-          ],
-        },
-        {
-          label: "Icon",
-          name: "icon",
-          type: "boolean",
-        },
-        {
-          label: "Link",
-          name: "link",
+          name: "alt",
+          label: "Alt Text",
           type: "string",
         },
       ],
+    },
+    {
+      type: "string",
+      label: "First Card Title",
+      name: "firstcardtitle",
+    },
+    {
+      label: "First Card Text",
+      name: "firstcardtext",
+      type: "rich-text",
+    },
+    {
+      type: "object",
+      label: "Secund Card Image",
+      name: "secundcardimage",
+      fields: [
+        {
+          name: "src",
+          label: "Image Source",
+          type: "image",
+        },
+        {
+          name: "alt",
+          label: "Alt Text",
+          type: "string",
+        },
+      ],
+    },
+    {
+      type: "string",
+      label: "Secund Card Title",
+      name: "secundcardtitle",
+    },
+    {
+      label: "Secund Card Text",
+      name: "secundcardtext",
+      type: "rich-text",
     },
     {
       type: "object",
@@ -182,7 +205,7 @@ export const nitroheroBlockSchema: TinaTemplate = {
       name: "color",
       options: [
         { label: "Default", value: "default" },
-        { label: "nitrogreen", value: "tint" },
+        { label: "Tint", value: "tint" },
         { label: "Primary", value: "primary" },
         { label: "Nitrogreen", value: "nitrogreen" },
       ],
