@@ -6,6 +6,7 @@ import type { TinaTemplate } from "tinacms";
 import { Actions } from "../util/actions";
 
 export const Contactus = ({ data, parentField = "" }) => {
+
   return (
     <Section color={data.color}>
       <Container
@@ -13,23 +14,30 @@ export const Contactus = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         width="medium"
       >
-        <div className="grid grid-cols-3 gap-4">
-          <div className="col-span-2">
-            <h1 className={"text-4xl uppercase font-bold text-center"}>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="col-span-2 md:col-span-1 col-span-2">
+            <h1
+                className={`not-italic font-bold text-3xl text-teal-600 text-left ${
+                  data.color === "lightgray" ? `text-[#393939] ` :  
+                    data.color === "eclipse" ? `text-[#009E97] ` : `text-white`
+                }`}>
             {data.headline}
           </h1>
-            <p className="text-xl font-normal">{data.title}</p>
+            <p className={`text-xl ${
+              data.color === "lightgray" ? `text-[#393939] ` : 
+                data.color === "eclipse" ? `text-[#393939] ` : `text-white`
+            }`}>{data.title}</p>
             <div className={`${
-              data.color === "nitrogreen" ? `text-center justify-center ` : `py-3`
+              data.color === "lightgray" ? `text-[#009E97] ` : `text-white`
             }`}>
               <TinaMarkdown content={data.body} />
             </div></div>
-          <div className="col-span-1">
+          <div className="col-span-2 md:col-span-1 self-center">
             {data.actions && (
             <Actions
               parentField={`${parentField}.actions`}
-              className="justify-center lg:justify-start py-2 bg-white"
-              parentColor={data.green}
+              className="justify-center py-2"
+              parentColor={data.color}
               actions={data.actions}
             />
           )}
@@ -75,7 +83,8 @@ export const contactusBlockSchema: TinaTemplate = {
           label: "Action Label",
           type: "button",
           icon: true,
-          link: "/"
+          link: "/",
+          color: "yellow",
         },
         itemProps: (item) => ({ label: item.label })
       },
@@ -103,8 +112,21 @@ export const contactusBlockSchema: TinaTemplate = {
           label: "Link",
           name: "link",
           type: "string"
+        },
+        {
+          type: "string",
+          label: "Color",
+          name: "color",
+          options: [
+            { label: "Default", value: "default" },
+            { label: "Eclipse", value: "eclipse" },
+            { label: "Dark cyan", value: "darkcyan" },
+            { label: "Lighz gray ish blue", value: "grayishblue"},
+            { label: "Light gray", value: "lightgray" },
+            { label: "Slightly", value: "slightly" }
+          ]
         }
-      ]
+      ],
     },
     {
       type: "string",
@@ -112,9 +134,12 @@ export const contactusBlockSchema: TinaTemplate = {
       name: "color",
       options: [
         { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
-        { label: "Primary", value: "primary" },
-        { label: "Nitrogreen", value: "nitrogreen" }
+        { label: "Eclipse", value: "eclipse" },
+        { label: "Dark cyan", value: "darkcyan" },
+        { label: "Lighz gray ish blue", value: "grayishblue"},
+        { label: "Light gray", value: "lightgray" },
+        { label: "Nitrogreen", value: "nitrogreen" },
+        { label: "Slightly", value: "slightly" }
       ]
     }
   ]

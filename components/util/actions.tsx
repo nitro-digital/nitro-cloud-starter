@@ -11,6 +11,12 @@ export const Actions = ({
 }) => {
   const theme = useTheme();
   const buttonColorClasses = {
+    eclipse: "text-[#009E97] bg-[#393939] hover:bg-[#C8D3E0] hover:text-[#393939] grid place-items-center",
+    darkcyan: "text-[#393939] bg-[#009E97] hover:bg-[#C8D3E0] hover:text-[#009E97] grid place-items-center",
+    grayishblue: "text-[#1D3E66] bg-[#C8D3E0] hover:bg-[#393939] hover:text-[#009E97] grid place-items-center",
+    lightgray: "text-[#1D3E66] bg-[#d9d9d9] hover:bg-[#393939] hover:text-[#009E97] grid place-items-center",
+    slightly: "text-[#393939] bg-[#7199c7] hover:bg-[#393939] hover:text-[#009E97] grid place-items-center",
+
     blue: "text-white bg-blue-500 hover:bg-blue-600 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-400 hover:to-blue-500",
     teal: "text-white bg-teal-500 hover:bg-teal-600 bg-gradient-to-r from-teal-400 to-teal-600 hover:from-teal-400 hover:to-teal-500",
     green:
@@ -56,7 +62,7 @@ export const Actions = ({
   };
 
   return (
-    <div className={`flex flex-wrap items-center gap-y-4 gap-x-6 ${className}`}>
+    <div className={`flex flex-wrap items-center${className}`}>
       {actions &&
         actions.map(function (action, index) {
           let element = null;
@@ -65,10 +71,10 @@ export const Actions = ({
               <Link key={index} href={action.link ? action.link : "/"}>
                 <button
                   data-tinafield={`${parentField}.${index}`}
-                  className={`z-10 relative flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out  rounded-lg transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap ${
+                  className={`items-center max-w-[377px] w-full max-h-[69px] h-full z-10 relative flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out  rounded-lg transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap ${
                     parentColor === "primary"
-                      ? invertedButtonColorClasses[theme.color]
-                      : buttonColorClasses[theme.color]
+                      ? invertedButtonColorClasses[action.color]
+                      : buttonColorClasses[action.color]
                   }`}
                 >
                   {action.label}
@@ -89,7 +95,7 @@ export const Actions = ({
                   className={`group inline-flex items-center font-semibold text-lg transition duration-150 ease-out ${
                     parentColor === "primary"
                       ? `text-white  hover:text-gray-50`
-                      : linkButtonColorClasses[theme.color]
+                      : linkButtonColorClasses[action.color]
                   }`}
                   style={{
                     textShadow: `0 3px 7px rgba(var(--color-rgb-blue-400),0.2)`,

@@ -76,7 +76,7 @@ export const Header = ({ data }) => {
       className={`bg-gradient-to-b ${headerColorCss}`}
     >
       <Container size="navbar" width="navbar"  className="absolute flow-root w-full py-0 z-10">
-          <nav className="border-gray-200 bg-transparent z-50">
+          <nav className={`${router.asPath === "/" ? "bg-transparent" : "bg-[#007D77]"}  border-gray-200 z-50`}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <Link href="/" className="flex items-center">
                 <svg className="h-8 mr-3" width="83" height="30" viewBox="0 0 83 30" fill="none" xmlns="http://www.w3.org/2000/svg">

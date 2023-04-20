@@ -75,11 +75,43 @@ blocks:
     actions:
       - label: Let’s go
         type: button
-        icon: true
+        icon: false
         link: 'mailto:info@nitrodigital.io'
-    color: default
+        color: eclipse
+    color: lightgray
+    _template: contactus
+  - headline: Contact us for more
+    title: >-
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).
+    body: ''
+    actions:
+      - label: Action Label
+        type: button
+        icon: false
+        link: /
+        color: slightly
+    color: darkcyan
     _template: contactus
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

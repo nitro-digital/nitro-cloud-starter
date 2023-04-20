@@ -39,7 +39,7 @@
     ]
   },
   "footer": {
-    "color": "default",
+    "color": "primary",
     "social": {
       "facebook": "/",
       "twitter": "/",
@@ -47,7 +47,7 @@
     }
   },
   "theme": {
-    "color": "blue",
+    "color": "pink",
     "font": "roboto",
     "darkMode": "light"
   }

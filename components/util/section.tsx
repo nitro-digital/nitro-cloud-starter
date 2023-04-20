@@ -8,6 +8,11 @@ export const Section = ({ children, color = "", className = "" }) => {
       "text-gray-800 dark:text-gray-50 bg-gradient-to-tl from-gray-50 dark:from-gray-900 via-transparent to-transparent",
     tint: "text-gray-900 dark:text-gray-100 bg-gradient-to-br from-gray-100 dark:from-gray-1000 to-transparent",
     nitrogreen: "text-white bg-basegreen",
+    eclipse: "bg-[#393939] text-white",
+    darkcyan: "bg-[#009E97] text-white",
+    grayishblue: "bg-[#C8D3E0] text-white",
+    lightgray: "bg-[#d9d9d9] text-white",
+    slightly: "bg-[#7199c7] text-white",
     primary: {
       blue: "text-white bg-blue-500 bg-gradient-to-br from-blue-500 to-blue-600",
       teal: "text-white bg-teal-500 bg-gradient-to-br from-teal-500 to-teal-600",
