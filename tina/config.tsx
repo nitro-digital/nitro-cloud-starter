@@ -11,6 +11,7 @@ import { nitroheroBlockSchema } from '../components/blocks/nitrohero';
 import { contactusBlockSchema } from "../components/blocks/contactus";
 import { solutionsBlockSchema } from "../components/blocks/solutions";
 import { workstabBlockSchema } from "../components/blocks/workstab";
+import { googlemapsBlockSchema } from "../components/blocks/googlemaps";
 
 const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -381,7 +382,8 @@ const config = defineConfig({
               nitroheroBlockSchema,
               contactusBlockSchema,
               solutionsBlockSchema,
-              workstabBlockSchema
+              workstabBlockSchema,
+              googlemapsBlockSchema
             ],
           },
         ],

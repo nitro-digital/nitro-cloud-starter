@@ -10,6 +10,7 @@ import { Nitrohero } from "../components/blocks/nitrohero";
 import { Contactus } from "../components/blocks/contactus";
 import { Solutions } from "../components/blocks/solutions";
 import { Workstab } from "../components/blocks/workstab";
+import { Googlemaps } from "../components/blocks/googlemaps";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
@@ -105,6 +106,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                   key={i + block.__typename}
                 >
                   <Workstab data={block} parentField={`blocks.${i}`} />
+                </div>
+              );
+            case "PageBlocksGooglemaps":
+              return (
+                <div
+                  data-tinafield={`blocks.${i}`}
+                  key={i + block.__typename}
+                >
+                  <Googlemaps data={block} parentField={`blocks.${i}`} />
                 </div>
               );
             default:
