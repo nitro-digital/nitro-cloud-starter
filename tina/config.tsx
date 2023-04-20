@@ -10,6 +10,7 @@ import { fullwheroBlockSchema } from '../components/blocks/fullwhero';
 import { nitroheroBlockSchema } from '../components/blocks/nitrohero';
 import { contactusBlockSchema } from "../components/blocks/contactus";
 import { solutionsBlockSchema } from "../components/blocks/solutions";
+import { workstabBlockSchema } from "../components/blocks/workstab";
 
 const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -379,7 +380,8 @@ const config = defineConfig({
               fullwheroBlockSchema,
               nitroheroBlockSchema,
               contactusBlockSchema,
-              solutionsBlockSchema
+              solutionsBlockSchema,
+              workstabBlockSchema
             ],
           },
         ],

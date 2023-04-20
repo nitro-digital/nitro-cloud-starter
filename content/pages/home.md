@@ -80,6 +80,42 @@ blocks:
         color: eclipse
     color: lightgray
     _template: contactus
+  - headline: What we did
+    title: Our work
+    body: >
+      Here you can see some of our works. - Coming soon!\
+
+      \
+
+      We are looking for challenges in which we can think together with our
+      customers. We believe in partnership, to deliver stable solutions: whether
+      it’s a marketing campaign, a static website, or even a more sophisticated,
+      web-based solution.
+    strategys:
+      strategy:
+        - header: '22'
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: asdas
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: sdffdss
+          description: 'ite, or even a more sophisticated, web-based solution.'
+        - header: asdasd
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: fsdfdsfs
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+    developments:
+      development:
+        - header: egy
+          description: ee
+    _template: workstab
   - headline: Contact us for more
     title: >-
       We're a passionate team about all around the digital globe (from the
@@ -94,6 +130,38 @@ blocks:
     color: darkcyan
     _template: contactus
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

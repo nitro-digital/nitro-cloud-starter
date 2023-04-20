@@ -21,6 +21,7 @@ export const Container = ({
     large: "max-w-7xl",
     custom: "",
     navbar: "w-full",
+    ourwork: "max-w-[1410]",
   };
 
   return (
