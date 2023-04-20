@@ -26,9 +26,9 @@ export default function BlogPostPage(
   );
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params, locale }) => {
   const tinaProps = await client.queries.blogPostQuery({
-    relativePath: `${params.filename}.mdx`,
+    relativePath: `${locale}/${params.filename}.mdx`,
   });
   return {
     props: {
@@ -44,13 +44,13 @@ export const getStaticProps = async ({ params }) => {
  * So a blog post at "content/posts/hello.md" would
  * be viewable at http://localhost:3000/posts/hello
  */
-export const getStaticPaths = async () => {
+export const getStaticPaths = async ({ locales }) => {
   const postsListData = await client.queries.postConnection();
   return {
     paths: postsListData.data.postConnection.edges.map((post) => ({
       params: { filename: post.node._sys.filename },
     })),
-    fallback: "blocking",
+    fallback: true,
   };
 };
 
