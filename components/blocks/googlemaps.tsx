@@ -1,7 +1,7 @@
 import React from "react";
 import type { TinaTemplate } from "tinacms";
 
-export const Googlemaps = ({ data}) => {
+export const Googlemaps =  ({ data, parentField = "" }) => {
   return (
     <>
 <div className="ifream">
