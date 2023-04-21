@@ -1,7 +1,7 @@
 ---
 title: Tina Cloud Starter
 blocks:
-  - headline: We have nitro hu
+  - headline: We have nitro
     text: >
       @nitro, we do what it takes to stay ahead of the game. Our dedicated,
       experienced team incorporates innovative ideas and successful strategies
@@ -129,9 +129,9 @@ blocks:
         color: slightly
     color: darkcyan
     _template: contactus
-  - _template: googlemaps
+  - body: ''
+    _template: googlemaps
 ---
-
 
 
 

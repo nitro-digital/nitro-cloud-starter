@@ -24,9 +24,7 @@ export const getStaticProps = async ({ params,locale }) => {
   });
   return {
     props: {
-      data: tinaProps.data,
-      query: tinaProps.query,
-      variables: tinaProps.variables,
+      ...tinaProps,
     },
   };
 };
