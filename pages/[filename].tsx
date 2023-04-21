@@ -18,53 +18,28 @@ export default function HomePage(
   );
 }
 
-export const getStaticProps = async ({ params,locale }) => {
+export const getStaticProps = async ({ params }) => {
   const tinaProps = await client.queries.contentQuery({
-    relativePath: `${locale}/${params.filename}.md`,
+    relativePath: `${params.filename}.md`,
   });
   return {
     props: {
-      ...tinaProps,
+      data: tinaProps.data,
+      query: tinaProps.query,
+      variables: tinaProps.variables,
     },
   };
 };
-/*
-export const getStaticPaths = async ({ locales }) => {
+
+export const getStaticPaths = async () => {
   const pagesListData = await client.queries.pageConnection();
-  const paths = [];
   return {
-    paths: pagesListData.data.pageConnection.edges.map((page) => (
-      locales.map((locale) => {
-        paths.push({
-          params: { filename: page.node._sys.filename },
-          locale,
-        });
-      })
-    )),
+    paths: pagesListData.data.pageConnection.edges.map((page) => ({
+      params: { filename: page.node._sys.filename },
+    })),
     fallback: false,
   };
-};*/
-
-export const getStaticPaths = async ({ locales }) => {
-  const pagesListData = await client.queries.pageConnection();
-  const paths = [];
-
-  // for each `post` document...
-  pagesListData.data.pageConnection.edges.map((page) => {
-    // ensure a `path` is created for each `locale`
-    locales.map((locale) => {
-      paths.push({
-        params: { filename: page.node._sys.filename },
-        locale,
-      });
-    });
-  });
-
-  return {
-    paths,
-    fallback: true,
-  }
-}
+};
 
 export type AsyncReturnType<T extends (...args: any) => Promise<any>> =
   T extends (...args: any) => Promise<infer R> ? R : any;
