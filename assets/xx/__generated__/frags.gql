@@ -1,0 +1,231 @@
+fragment PostParts on Post {
+  title
+  heroImg
+  excerpt
+  testspace
+  author {
+    ... on Author {
+      name
+      avatar
+    }
+    ... on Document {
+      id
+    }
+  }
+  date
+  _body
+}
+
+fragment GlobalParts on Global {
+  header {
+    __typename
+    icon {
+      __typename
+      name
+      color
+      style
+    }
+    name
+    color
+    nav {
+      __typename
+      href
+      label
+    }
+  }
+  footer {
+    __typename
+    color
+    social {
+      __typename
+      facebook
+      twitter
+      instagram
+      github
+    }
+  }
+  theme {
+    __typename
+    color
+    font
+    darkMode
+  }
+}
+
+fragment AuthorParts on Author {
+  name
+  avatar
+}
+
+fragment PageParts on Page {
+  title
+  blocks {
+    __typename
+    ... on PageBlocksHero {
+      tagline
+      headline
+      text
+      actions {
+        __typename
+        label
+        type
+        icon
+        link
+      }
+      image {
+        __typename
+        src
+        alt
+      }
+      color
+    }
+    ... on PageBlocksFeatures {
+      items {
+        __typename
+        icon {
+          __typename
+          name
+          color
+          style
+        }
+        title
+        text
+      }
+      color
+    }
+    ... on PageBlocksContent {
+      body
+      color
+    }
+    ... on PageBlocksTestimonial {
+      quote
+      author
+      color
+    }
+    ... on PageBlocksInfo {
+      headline
+      title
+      body
+      color
+    }
+    ... on PageBlocksFullwhero {
+      headline
+      text
+      image {
+        __typename
+        src
+        alt
+      }
+    }
+    ... on PageBlocksNitrohero {
+      firstcardimage {
+        __typename
+        src
+        alt
+      }
+      firstcardtitle
+      firstcardtext
+      secundcardimage {
+        __typename
+        src
+        alt
+      }
+      secundcardtitle
+      secundcardtext
+      image {
+        __typename
+        src
+        alt
+      }
+      color
+    }
+    ... on PageBlocksContactus {
+      headline
+      title
+      body
+      actions {
+        __typename
+        label
+        type
+        icon
+        link
+        color
+      }
+      color
+    }
+    ... on PageBlocksSolutions {
+      headline
+      title
+      baseline
+      digitalstrategy
+      digitalstrategytext
+      consulting
+      consultingtext
+      projectmanagement
+      projectmanagementtext
+      pr
+      prtext
+      marketing
+      marketingtext
+      color
+      images {
+        __typename
+        image {
+          __typename
+          src
+          title
+          alt
+        }
+      }
+    }
+    ... on PageBlocksWorkstab {
+      headline
+      title
+      body
+      strategys {
+        __typename
+        strategy {
+          __typename
+          header
+          description
+        }
+      }
+      developments {
+        __typename
+        development {
+          __typename
+          header
+          description
+        }
+      }
+      projectmaganements {
+        __typename
+        projectmaganement {
+          __typename
+          header
+          description
+        }
+      }
+      onlinemarketings {
+        __typename
+        onlinemarketing {
+          __typename
+          header
+          description
+        }
+      }
+      socialmedias {
+        __typename
+        socialmedia {
+          __typename
+          header
+          description
+        }
+      }
+      color
+    }
+    ... on PageBlocksGooglemaps {
+      title
+    }
+  }
+}

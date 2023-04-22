@@ -1,5 +1,5 @@
 ---
-title: Solutions ee
+title: Solutions eeg
 blocks:
   - headline: What we do en
     title: Solutions 
