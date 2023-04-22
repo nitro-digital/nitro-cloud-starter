@@ -18,6 +18,7 @@ export default function HomePage(
   );
 }
 
+
 export const getStaticProps = async ({ params, locale }) => {
   const tinaProps = await client.queries.contentQuery({
     relativePath: `${locale}/${params.filename}.md`,
@@ -30,6 +31,7 @@ export const getStaticProps = async ({ params, locale }) => {
     },
   };
 };
+
 
 export const getStaticPaths = async ({ locales }) => {
   const pagesListData = await client.queries.pageConnection();
