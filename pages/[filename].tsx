@@ -18,9 +18,9 @@ export default function HomePage(
   );
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params, locale }) => {
   const tinaProps = await client.queries.contentQuery({
-    relativePath: `${params.filename}.md`,
+    relativePath: `${locale}/${params.filename}.md`,
   });
   return {
     props: {
@@ -31,12 +31,19 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 
-export const getStaticPaths = async () => {
+export const getStaticPaths = async ({ locales }) => {
   const pagesListData = await client.queries.pageConnection();
+  const paths = [];
+  pagesListData.data.pageConnection.edges.map((page) => {
+    locales.map((locale) => {
+      paths.push({
+        params: { filename: page.node._sys.filename },
+        locale,
+      });
+    });
+  });
   return {
-    paths: pagesListData.data.pageConnection.edges.map((page) => ({
-      params: { filename: page.node._sys.filename },
-    })),
+    paths,
     fallback: false,
   };
 };
