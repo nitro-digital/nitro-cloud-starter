@@ -2,7 +2,7 @@
 title: about-hu
 blocks:
   - headline: Where are we?
-    title: contact us
+    title: contact us (HU)
     body: >
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).
@@ -28,6 +28,7 @@ blocks:
     color: lightgray
     _template: contactus
 ---
+
 
 
 

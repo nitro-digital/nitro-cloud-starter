@@ -1,8 +1,8 @@
 ---
 title: Solutions huhu
 blocks:
-  - headline: What we do
-    title: Solutions
+  - headline: 'What we do '
+    title: Solutions (HU)
     baseline: >-
       We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).
@@ -79,6 +79,7 @@ blocks:
     color: darkcyan
     _template: contactus
 ---
+
 
 
 

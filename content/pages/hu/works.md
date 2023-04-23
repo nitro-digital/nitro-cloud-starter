@@ -2,7 +2,7 @@
 title: Our work-HU
 blocks:
   - headline: What we did
-    title: Our work
+    title: Our work (HU)
     body: >
       Here you can see some of our works. - Coming soon!\
 
@@ -131,6 +131,7 @@ blocks:
     color: naviblue
     _template: contactus
 ---
+
 
 
 
