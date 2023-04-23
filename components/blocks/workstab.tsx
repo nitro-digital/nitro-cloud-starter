@@ -28,7 +28,7 @@ export const Workstab = ({ data, parentField = "" }) => {
           </h1>
           <p className="text-center pb-10">
           <span className={`text-5xl ${
-            data.color === "nitrogreen" ? `border-b-4 border-[#7199C7] inline-block px-5 ` : `border-b-4 border-basegreen inline-block px-5`
+            data.color === "nitrogreen" ? ` px-5  border-b-4 border-[#7199C7] inline-block px-5 ` : `border-b-4 border-basegreen inline-block px-5`
           }`}>{data.title}</span>
           </p>
           <div className={`mx-6 md:mx-[20px] ${

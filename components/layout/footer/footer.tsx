@@ -10,8 +10,8 @@ export const Footer = ({ data }) => {
 
   return (
     <footer className={`bg-[#272525] h-[331px]`}>
-      <Container className="relative py-0" size="small">
-        <div className="content-center justify-items-center md:flex-row items-center justify-center text-[#009E97]">
+      <Container className="relative !py-0" size="small">
+        <div className="content-center justify-items-center md:flex-row items-center justify-center text-[#009E97] !py-0">
           <div className="flex justify-center mt-[80px] mb-[30px]">
             <svg width="120" height="37" viewBox="0 0 120 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>

@@ -31,8 +31,8 @@ blocks:
   - items:
       - icon:
           name: Strategymap
-          color: ''
-          style: float
+          color: teal
+          style: ''
         title: Stratégia alkotás
         text: ''
       - icon:
@@ -43,8 +43,8 @@ blocks:
         text: ''
       - icon:
           name: Giticon
-          color: ''
-          style: float
+          color: pink
+          style: ''
         title: Projektmenedzsment
         text: |+
 
@@ -73,7 +73,7 @@ blocks:
         type: button
         icon: false
         link: /
-        color: slightly
+        color: eclipse
     color: darkcyan
     _template: contactus
   - headline: What we did
@@ -201,6 +201,9 @@ blocks:
     _template: info
   - _template: googlemaps
 ---
+
+
+
 
 
 
