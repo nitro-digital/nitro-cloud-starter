@@ -7,44 +7,42 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const Solutions = ({ data, parentField = "" }) => {
   return (
-    <div className={`bg-[#393939]`}>
+    <div className={`bg-[#393939] py-4`}>
       <Container
         className={`py-24 bg-[#393939]`}
         data-tinafield={`${parentField}.body`}
         width="large"
       >
-        <h2 className={"not-italic font-light text-xl uppercase text-white"}>
+        <h2 className={"mx-5 not-italic font-light text-xl uppercase text-white"}>
           {data.headline}
         </h2>
-        <h1 className="not-italic font-normal text-5xl lowercase text-white">{data.title}</h1>
-        <p className="not-italic font-normal text-xl text-gray-400">{data.baseline}</p>
+        <h1 className="not-italic font-normal md:text-5xl mx-5  text-[36px] lowercase text-white border-b-4 border-[#7199C7] inline-block">{data.title}</h1>
+        <p className="not-italic font-normal text-xl text-gray-400 mx-5 pt-[70px]">{data.baseline}</p>
         {data.images && (
           <>
-            <h2
+            <div
               data-tinafield={`${parentField}.images`}
               className="relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
             >
-            </h2>
-            <div className="flex flex-wrap items-center justify-center pt-[60px] pb-[170px]">
-              <div className="grid grid-cols-5 gap-4">
-                {data.images.image.map((image, index) => (
-                  <div key={index} className="flex-1 justify-center flex flex-col gap-6 text-center items-center lg:text-left max-w-xl mx-auto">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      title={image.title}
-                    />
-                    <div className="flex-1 justify-center flex flex-col gap-6 text-center items-center lg:text-left max-w-xl mx-auto text-white">{image.title}</div>
-                  </div>
-                ))}
-              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-5 sm:grid-cols-2 md:grid-row-2 gap-4 justify-center items-center pt-[60px] pb-[170px]">
+              {data.images.image.map((image, index) => (
+                <div key={index} className="flex flex-col gap-6 text-center items-center max-w-xl mx-auto">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    title={image.title}
+                  />
+                  <div className="flex-1 justify-center flex flex-col gap-6 text-center items-center lg:text-left max-w-xl mx-auto text-white">{image.title}</div>
+                </div>
+              ))}
             </div>
           </>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-[615px] bg-[#7199C7] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-white pt-5">1.</h1>
-            <div className="not-italic font-normal text-5xl text-gray-800 leading-[58px] pt-5">{data.digitalstrategy}</div>
+            <div className="not-italic font-normal md:text-5xl   text-[36px] text-gray-800 leading-[58px] pt-5">{data.digitalstrategy}</div>
             <div className="not-italic font-normal text-xl leading-[115%] text-[#E0E0E0] leading-[23px] pt-[41px]">
               <TinaMarkdown content={data.digitalstrategytext} />
             </div>
@@ -55,14 +53,14 @@ export const Solutions = ({ data, parentField = "" }) => {
           </div>
           <div className="h-[615px] bg-[#009E97] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-white pt-5">2.</h1>
-            <div className="not-italic font-normal text-5xl text-white leading-[58px] pt-5">{data.consulting}</div>
+            <div className="not-italic font-normal md:text-5xl   text-[36px] text-white leading-[58px] pt-5">{data.consulting}</div>
             <div className="not-italic font-normal text-xl text-white leading-[23px] pt-[41px]">
               <TinaMarkdown content={data.consultingtext} />
             </div>
           </div>
           <div className="h-[615px] bg-[#1D3E66] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-white pt-5">3.</h1>
-            <div className="not-italic font-normal text-5xl text-gray-400 leading-[58px] pt-5">{data.projectmanagement}</div>
+            <div className="not-italic font-normal md:text-5xl   text-[36px] text-gray-400 leading-[58px] pt-5">{data.projectmanagement}</div>
             <div className="not-italic font-normal text-xl text-gray-300  leading-[23px] pt-[41px]">
               <TinaMarkdown content={data.projectmanagementtext} />
             </div>
@@ -73,14 +71,14 @@ export const Solutions = ({ data, parentField = "" }) => {
           </div>
           <div className="h-[615px] bg-[#D9D9D9] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-gray-800 pt-5">4.</h1>
-            <div className="not-italic font-normal text-5xl text-teal-700 leading-[58px] pt-5">{data.pr}</div>
+            <div className="not-italic font-normal md:text-5xl   text-[36px] text-teal-700 leading-[58px] pt-5">{data.pr}</div>
             <div className="not-italic font-normal text-xl text-gray-800  leading-[23px] pt-[41px]">
               <TinaMarkdown content={data.prtext} />
             </div>
           </div>
           <div className="h-[615px] bg-[#006661] px-8">
             <h1 className="not-italic font-light text-xl uppercase text-white pt-5">5.</h1>
-            <div className="not-italic font-normal text-5xl text-gray-400 leading-[58px] pt-5">{data.marketing}</div>
+            <div className="not-italic font-normal md:text-5xl   text-[36px] text-gray-400 leading-[58px] pt-5">{data.marketing}</div>
             <div className="not-italic font-normal text-xl text-gray-300 leading-[23px] pt-[41px]">
               <TinaMarkdown content={data.marketingtext} />
             </div>

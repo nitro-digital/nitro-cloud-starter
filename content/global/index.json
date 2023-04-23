@@ -15,24 +15,24 @@
         "en": "Home"
       },
       {
-        "href": "about",
+        "href": "solutions",
           "hu": "Megoldásaink ",
           "en": "Solutions"
       },
       {
-        "href": "#rolunk",
+        "href": "about",
         "label": "Rólunk",
           "hu": "Rólunk ",
           "en": "About us"
       },
       {
-        "href": "",
+        "href": "works",
         "label": "Munkáink",
           "hu": "Munkáink ",
           "en": "Our work"
       },
       {
-        "href": "#kapcsolat",
+        "href": "contact",
         "label": "Kapcsolat",
           "hu": "Kapcsolat ",
           "en": "Contact"

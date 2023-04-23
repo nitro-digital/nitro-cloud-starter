@@ -17,7 +17,6 @@ export const Workstab = ({ data, parentField = "" }) => {
         width="ourwork"
       >
         <Container
-          id="kapcsolat"
           className={`py-24 px-[30px]${
             data.color === "primary" ? `prose-primary` : `dark:prose-dark`
           }`}
@@ -27,8 +26,12 @@ export const Workstab = ({ data, parentField = "" }) => {
           <h1 className={"text-xl uppercase font-light text-center"}>
             {data.headline}
           </h1>
-          <p className="text-5xl text-center underline-offset-[3px]">{data.title}</p>
-          <div className={`${
+          <p className="text-center pb-10">
+          <span className={`text-5xl ${
+            data.color === "nitrogreen" ? `border-b-4 border-[#7199C7] inline-block px-5 ` : `border-b-4 border-basegreen inline-block px-5`
+          }`}>{data.title}</span>
+          </p>
+          <div className={`mx-6 md:mx-[20px] ${
             data.color === "nitrogreen" ? `text-center justify-center ` : `py-3`
           }`}>
             <TinaMarkdown content={data.body} />
@@ -37,7 +40,7 @@ export const Workstab = ({ data, parentField = "" }) => {
         <div className="container mx-auto mt-12">
           <div className="justify-center w-full">
             <div className="flex place-content-center">
-              <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex flex-col items-center justify-center">
+              <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex flex-col items-center lg:justify-between justify-center">
                 <li>
                   <a
                     onClick={() => setOpenTab(1)}
@@ -87,7 +90,7 @@ export const Workstab = ({ data, parentField = "" }) => {
                     {data.strategys && (
                       <>
                         <div className="flex flex-wrap items-center justify-center">
-                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                             {data.strategys.strategy.map((strategy, index) => (
                               <div key={index} className={`min-h-[225px] max-w-[353px] min-w-[225px] xxl:min-w-[353px] w-full ${index === 0 ? "bg-[#4B4B4B]" : index === 1 ? "bg-[#323131]" : index === 2 ? "bg-[#605E5E]" : index === 3 ? "bg-[#494949]" : "bg-[#323131]"}`}>
                                 <div
@@ -115,7 +118,7 @@ export const Workstab = ({ data, parentField = "" }) => {
                     {data.developments && (
                       <>
                         <div className="flex flex-wrap items-center justify-center">
-                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                             {data.developments.development.map((development, index) => (
                               <div key={index} className={`min-h-[225px] max-w-[353px] min-w-[225px] xxl:min-w-[353px] w-full ${index === 0 ? "bg-[#4B4B4B]" : index === 1 ? "bg-[#323131]" : index === 2 ? "bg-[#605E5E]" : index === 3 ? "bg-[#494949]" : "bg-[#323131]"}`}>
                                 <div
@@ -143,9 +146,9 @@ export const Workstab = ({ data, parentField = "" }) => {
                     {data.projectmaganements && (
                       <>
                         <div className="flex flex-wrap items-center justify-center">
-                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                             {data.projectmaganements.projectmaganement.map((projectmaganement, index) => (
-                              <div key={index} className={`h-[225px] w-[225px] ${index === 0 ? "bg-[#4B4B4B]" : index === 1 ? "bg-[#323131]" : index === 2 ? "bg-[#605E5E]" : index === 3 ? "bg-[#494949]" : "bg-[#323131]"}`}>
+                              <div key={index} className={`min-h-[225px] max-w-[353px] min-w-[225px] xxl:min-w-[353px] w-full ${index === 0 ? "bg-[#4B4B4B]" : index === 1 ? "bg-[#323131]" : index === 2 ? "bg-[#605E5E]" : index === 3 ? "bg-[#494949]" : "bg-[#323131]"}`}>
                                 <div
                                   className="py-[25px] px-[25px] bottom-0 flex flex-col justify-end h-full"
                                 >
@@ -171,7 +174,7 @@ export const Workstab = ({ data, parentField = "" }) => {
                     {data.onlinemarketings && (
                       <>
                         <div className="flex flex-wrap items-center justify-center">
-                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                             {data.onlinemarketings.onlinemarketing.map((onlinemarketing, index) => (
                               <div key={index} className={`min-h-[225px] max-w-[353px] min-w-[225px] xxl:min-w-[353px] w-full ${index === 0 ? "bg-[#4B4B4B]" : index === 1 ? "bg-[#323131]" : index === 2 ? "bg-[#605E5E]" : index === 3 ? "bg-[#494949]" : "bg-[#323131]"}`}>
                                 <div
@@ -199,7 +202,7 @@ export const Workstab = ({ data, parentField = "" }) => {
                     {data.socialmedias && (
                       <>
                         <div className="flex flex-wrap items-center justify-center">
-                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
                             {data.socialmedias.socialmedia.map((socialmedia, index) => (
                               <div key={index} className={`min-h-[225px] max-w-[353px] min-w-[225px] xxl:min-w-[353px] w-full ${index === 0 ? "bg-[#4B4B4B]" : index === 1 ? "bg-[#323131]" : index === 2 ? "bg-[#605E5E]" : index === 3 ? "bg-[#494949]" : "bg-[#323131]"}`}>
                                 <div

@@ -9,6 +9,7 @@ export const Section = ({ children, color = "", className = "" }) => {
     tint: "text-gray-900 dark:text-gray-100 bg-gradient-to-br from-gray-100 dark:from-gray-1000 to-transparent",
     nitrogreen: "text-white bg-basegreen",
     eclipse: "bg-[#393939] text-white",
+    naviblue: "bg-[#224775] text-white\"",
     darkcyan: "bg-[#009E97] text-white",
     grayishblue: "bg-[#C8D3E0] text-white",
     lightgray: "bg-[#d9d9d9] text-white",

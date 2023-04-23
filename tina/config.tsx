@@ -360,6 +360,15 @@ const config = defineConfig({
             if (document._sys.filename === "about") {
               return `/about`;
             }
+            if (document._sys.filename === "solutions") {
+              return `/solutions`;
+            }
+            if (document._sys.filename === "works") {
+              return `/works`;
+            }
+            if (document._sys.filename === "contact") {
+              return `/contact`;
+            }
             return undefined;
           },
         },

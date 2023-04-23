@@ -14,7 +14,7 @@ export const Contactus = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         width="medium"
       >
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 mx-6">
           <div className="col-span-2 md:col-span-1 col-span-2">
             <h1
                 className={`not-italic font-bold text-3xl text-teal-600 text-left ${
@@ -23,15 +23,16 @@ export const Contactus = ({ data, parentField = "" }) => {
                 }`}>
             {data.headline}
           </h1>
-            <p className={`text-xl ${
+            <p className={`font-[30px] content-start ${
               data.color === "lightgray" ? `text-[#393939] ` : 
                 data.color === "eclipse" ? `text-[#393939] ` : `text-white`
             }`}>{data.title}</p>
-            <div className={`${
+            <div className={`font-[20px] ${
               data.color === "lightgray" ? `text-[#009E97] ` : `text-white`
             }`}>
               <TinaMarkdown content={data.body} />
-            </div></div>
+            </div>
+          </div>
           <div className="col-span-2 md:col-span-1 self-center">
             {data.actions && (
             <Actions
@@ -134,6 +135,7 @@ export const contactusBlockSchema: TinaTemplate = {
       name: "color",
       options: [
         { label: "Default", value: "default" },
+        { label: "Naviblue", value: "naviblue" },
         { label: "Eclipse", value: "eclipse" },
         { label: "Dark cyan", value: "darkcyan" },
         { label: "Lighz gray ish blue", value: "grayishblue"},

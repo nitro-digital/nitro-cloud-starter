@@ -1,10 +1,10 @@
 ---
-title: Solutions eeg
+title: Solutions huhu
 blocks:
-  - headline: What we do en
-    title: Solutions 
+  - headline: What we do
+    title: Solutions
     baseline: >-
-      en We're a passionate team about all around the digital globe (from the
+      We're a passionate team about all around the digital globe (from the
       metaverse to the classic web).
     digitalstrategy: Digital strategy
     digitalstrategytext: >

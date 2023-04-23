@@ -1,12 +1,13 @@
 ---
-title: Tina Cloud Starter
+title: Home-HU
 blocks:
   - headline: We have nitro
     text: >
       @nitro, we do what it takes to stay ahead of the game. Our dedicated,
       experienced team incorporates innovative ideas and successful strategies
       to ensure that our clients get to the top and stay there. Depends on your
-      ideas we can help you out at 360 degrees of the digital space.*** ***
+      ideas we can help you out at 360 degrees of the digital space.\*\*\*
+      \*\*\*
 
 
       ***Tell us your needs. (hu)***
@@ -27,19 +28,6 @@ blocks:
       src: /uploads/Group 28 (2).jpg
     color: nitrogreen
     _template: nitrohero
-  - headline: Who we are
-    title: about us
-    body: >
-      We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).
-
-
-      We are looking for challenges in which we can think together w*ith our
-      customers. We believe in partnership, to deliver stable solutions: whether
-      it’s a marketing campaign, a static website, or even a more sophisticated,
-      web-based solution.*
-    color: default
-    _template: info
   - items:
       - icon:
           name: Strategymap
@@ -62,12 +50,18 @@ blocks:
 
     color: tint
     _template: features
-  - headline: Where are we?
-    title: contact us
-    body: |
-      Here you can contact us:
-      info@nitrodigital.io
-    color: nitrogreen
+  - headline: Who we are
+    title: about us
+    body: >
+      We're a passionate team about all around the digital globe (from the
+      metaverse to the classic web).
+
+
+      We are looking for challenges in which we can think together w*ith our
+      customers. We believe in partnership, to deliver stable solutions: whether
+      it’s a marketing campaign, a static website, or even a more sophisticated,
+      web-based solution.*
+    color: default
     _template: info
   - headline: Contact us for more
     title: >-
@@ -75,12 +69,12 @@ blocks:
       metaverse to the classic web).
     body: ''
     actions:
-      - label: Let’s go
+      - label: Action Label
         type: button
         icon: false
-        link: 'mailto:info@nitrodigital.io'
-        color: eclipse
-    color: lightgray
+        link: /
+        color: slightly
+    color: darkcyan
     _template: contactus
   - headline: What we did
     title: Our work
@@ -95,44 +89,126 @@ blocks:
       web-based solution.
     strategys:
       strategy:
-        - header: '22'
+        - header: Nitro strategy 0
           description: |-
 
             ite, or even a more sophisticated, web-based solution.
-        - header: asdas
+        - header: Nitro strategy 1
           description: |-
 
-            ite, or even a more sophisticated, web-based solution.
-        - header: sdffdss
-          description: 'ite, or even a more sophisticated, web-based solution.'
-        - header: asdasd
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro strategy 2
           description: |-
 
-            ite, or even a more sophisticated, web-based solution.
-        - header: fsdfdsfs
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro strategy 3
           description: |-
 
-            ite, or even a more sophisticated, web-based solution.
+            We are looking for challenges in which we can think together with
+            our customers.
     developments:
       development:
-        - header: egy
-          description: ee
+        - header: Nitro development 1
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: Nitro development 2
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro development 3
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro development 4
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+    projectmaganements:
+      projectmaganement:
+        - header: Nitro projectmaganement1
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: Nitro projectmaganement 2
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro projectmaganement 3
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro projectmaganement 4
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+    onlinemarketings:
+      onlinemarketing:
+        - header: Nitro onlinemarketing 1
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: Nitro onlinemarketing 2
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro onlinemarketing 3
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro onlinemarketing 4
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+    socialmedias:
+      socialmedia:
+        - header: Nitro socialmedia 1
+          description: |-
+
+            ite, or even a more sophisticated, web-based solution.
+        - header: Nitro socialmedia 2
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro socialmedia 3
+          description: |-
+            We are looking for challenges in which we can think together with
+            our customers.
+        - header: Nitro socialmedia 4
+          description: |-
+
+            We are looking for challenges in which we can think together with
+            our customers.
     _template: workstab
-  - headline: Contact us for more
-    title: >-
-      We're a passionate team about all around the digital globe (from the
-      metaverse to the classic web).
-    body: ''
-    actions:
-      - label: Action Label
-        type: button
-        icon: false
-        link: /
-        color: slightly
-    color: darkcyan
-    _template: contactus
+  - headline: Where are we?
+    title: contact us
+    body: |
+      Here you can contact us:
+      info@nitrodigital.io
+    color: nitrogreen
+    _template: info
   - _template: googlemaps
 ---
+
+
+
+
+
+
+
+
 
 
 
