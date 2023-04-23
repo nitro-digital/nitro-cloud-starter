@@ -1,15 +1,17 @@
 ---
 title: Tina Cloud Starter
 blocks:
-  - headline: We have nitro hu
+  - headline: We have nitro
     text: >
       @nitro, we do what it takes to stay ahead of the game. Our dedicated,
       experienced team incorporates innovative ideas and successful strategies
       to ensure that our clients get to the top and stay there. Depends on your
-      ideas we can help you out at 360 degrees of the digital space. Tell us
-      your needs.
+      ideas we can help you out at 360 degrees of the digital space.*** ***
+
+
+      ***Tell us your needs. (hu)***
     image:
-      src: /uploads/Group 27.jpg
+      src: /uploads/Group-27-_1_-_1_.webp
     _template: fullwhero
   - firstcardimage:
       src: /uploads/Frame (4).svg
@@ -131,6 +133,8 @@ blocks:
     _template: contactus
   - _template: googlemaps
 ---
+
+
 
 
 

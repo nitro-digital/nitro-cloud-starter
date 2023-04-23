@@ -89,10 +89,10 @@ export const Header = ({ data }) => {
       className={`bg-gradient-to-b ${headerColorCss}`}
     >
       <Container size="navbar" width="navbar"  className="absolute flow-root w-full py-0 z-10">
-          <nav className={`bg-transparent ${router.asPath == "/" ? "!bg-transparent" : "!bg-[#007D77]"} border-gray-200 z-50`}>
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-              <Link href="/" className="flex items-center">
-                <svg className="h-8 mr-3" width="83" height="30" viewBox="0 0 83 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <nav className={`${['/home', '/'].includes(router.asPath) ? "bg-transparent" : "bg-[#007D77]"} border-gray-200 z-50`}>
+            <div className={`${['/home', '/'].includes(router.asPath) ? "justify-end" : "justify-between"} max-w-screen-xl flex md:flex-nowrap flex-wrap mx-auto p-4`}>
+              <Link href="/" className="flex items-start">
+                <svg className={`bg-transparent ${['/home', '/'].includes(router.asPath) ? "hidden" : "flex"} h-8 mr-3" width="83" height="30" viewBox="0 0 83 30" fill="none" xmlns="http://www.w3.org/2000/svg`}>
                   <path d="M5.53285 8.1293V11.1031H5.65789C6.3203 9.92961 7.31894 8.98459 8.5233 8.39153C9.64857 7.84086 10.8825 7.55225 12.1337 7.54713C13.4396 7.50392 14.741 7.72138 15.963 8.18699C16.8917 8.55953 17.706 9.17297 18.323 9.96496C18.9236 10.7852 19.3364 11.7291 19.5317 12.7289C19.7728 13.918 19.8898 15.1291 19.8808 16.3426V29.4545H14.0666V17.3915C14.0666 15.6345 13.7904 14.3181 13.2434 13.4527C12.6964 12.5873 11.7274 12.152 10.3363 12.152C8.74906 12.152 7.60116 12.6258 6.89262 13.5734C6.18408 14.5209 5.82807 16.0821 5.8246 18.2569V29.465H0V8.1293H5.53285Z" fill="#D9D9D9"/>
                   <path d="M22.8452 4.83042V0H28.6542V4.83042H22.8452ZM22.8452 15.7028V8.12937H28.6542V29.465H22.8452V15.7028Z" fill="#D9D9D9"/>
                   <path d="M44.0805 8.12944V12.063H39.8137V22.6155C39.8137 23.6015 39.9804 24.2623 40.3346 24.5927C40.6889 24.9231 41.3193 25.1172 42.304 25.1172C42.627 25.1172 42.9448 25.1172 43.2469 25.0752C43.5357 25.0502 43.8227 25.0082 44.1066 24.9494V29.4913C43.563 29.5766 43.0151 29.6309 42.4655 29.6539C41.8663 29.6539 41.2776 29.6959 40.7045 29.6959C39.8466 29.6991 38.9896 29.636 38.1413 29.5071C37.3923 29.4052 36.6693 29.1614 36.0105 28.7885C35.3924 28.4284 34.8884 27.8992 34.5569 27.2623C34.1677 26.446 33.9885 25.5442 34.0359 24.6399V12.063H30.4724V8.12944H33.9943V1.73608H39.8137V8.12944H44.0805Z" fill="#D9D9D9"/>
@@ -101,12 +101,12 @@ export const Header = ({ data }) => {
                 </svg>
                 {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Brand</span> */}
               </Link>
-              <button onClick={toggleMobileMenu} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <button onClick={toggleMobileMenu} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-end p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span className="sr-only">Open main menu</span>
-                <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
+                <svg className="w-6 h-6" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
               </button>
-              <div className={`${mobileMenuOpen ? "" : "hidden"} w-full md:block md:w-auto focus:outline-none`} id="navbar-default">
-                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:bg-transparent bg-blue-900 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+              <div className={`${mobileMenuOpen ? "bg-opacity-50 backdrop-blur-xl rounded drop-shadow-lg mt-1.5" : "hidden"} w-full md:block md:w-auto focus:outline-none`} id="navbar-default">
+                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 items-end md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0">
                   {data.nav &&
                     data.nav.map((item, i) => {
                       const activeItem =
@@ -122,11 +122,11 @@ export const Header = ({ data }) => {
                         >
                           <Link href={`${prefix}/${item.href}`} passHref>
                             <a
-                              className={`block py-2 pl-3 pr-4 relative select-none	text-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 px-4 ${
+                              className={`block relative select-nonetext-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100${
                                 activeItem ? `` : `opacity-70`
                               }`}
                             >
-                              {item.label}
+                              {locales[router.locale] === "HU" ? item.hu : item.en}
                               {activeItem && (
                                 <svg
                                   className={`absolute bottom-0 left-1/2 w-[180%] h-full -translate-x-1/2 -z-1 opacity-10 dark:opacity-15 ${
@@ -169,71 +169,75 @@ export const Header = ({ data }) => {
                         </li>
                       );
                     })}
+                  <li>
+                    <Menu as="div" className="relative inline-block text-left">
+                      <div>
+                        <Menu.Button className="inline-flex justify-center w-full rounded-md border-transparent shadow-sm px-4 bg-transparent text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+                          {locales[router.locale]}
+                          <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                        </Menu.Button>
+                      </div>
+
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="origin-top-right absolute right-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <div className="py-0">
+                            <Menu.Item>
+                              {({ active }) => (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    router.push(router.asPath, null, {
+                                      locale: "en",
+                                      scroll: false,
+                                    });
+                                  }}
+                                  className={classNames(
+                                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                                    "block px-4 py-2 text-sm"
+                                  )}
+                                >
+                                    EN
+                                </button>
+                              )}
+                            </Menu.Item>
+                            <Menu.Item>
+                              {({ active }) => (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    console.log("doit");
+                                    router.push(router.asPath, null, {
+                                      locale: "hu",
+                                      scroll: false,
+                                    });
+                                  }}
+                                  className={classNames(
+                                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                                    "block px-4 py-2 text-sm"
+                                  )}
+                                >
+
+                                  HU
+                                </button>
+                              )}
+                            </Menu.Item>
+                          </div>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
+                  </li>
                 </ul>
               </div>
             </div>
-            <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <Menu.Button className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-transparent text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-                  {locales[router.locale]}
-                  <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
-                </Menu.Button>
-              </div>
 
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items className="origin-top-right absolute right-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  <div className="py-1">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            router.push(router.asPath, null, {
-                              locale: "en",
-                              scroll: false,
-                            });
-                          }}
-                          className={classNames(
-                            active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                            "block px-4 py-2 text-sm"
-                          )}
-                        >
-                          EN
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            console.log("doit");
-                            router.push(router.asPath, null, {
-                              locale: "hu",
-                              scroll: false,
-                            });
-                          }}
-                          className={classNames(
-                            active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                            "block px-4 py-2 text-sm"
-                          )}
-                        >
-                          HU
-                        </button>
-                      )}
-                    </Menu.Item>
-                  </div>
-                </Menu.Items>
-              </Transition>
-            </Menu>
           </nav>
         <div
           className={`absolute h-1 bg-gradient-to-r from-transparent ${

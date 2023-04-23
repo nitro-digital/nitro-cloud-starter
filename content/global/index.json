@@ -5,36 +5,37 @@
       "color": "orange",
       "style": "float"
     },
-    "name": "Tina Starter",
+    "name": "Nitro",
     "color": "default",
     "nav": [
       {
         "href": "",
-        "label": "Home"
+        "label": "Home",
+        "hu": "Home ",
+        "en": "Home"
       },
       {
         "href": "about",
-        "label": "Solutions"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
+          "hu": "Megoldásaink ",
+          "en": "Solutions"
       },
       {
         "href": "#rolunk",
-        "label": "Rólunk"
+        "label": "Rólunk",
+          "hu": "Rólunk ",
+          "en": "About us"
       },
       {
-        "href": "#megoldasaink",
-        "label": "Megoldásaink"
-      },
-      {
-        "href": "#munkaink",
-        "label": "Munkáink"
+        "href": "",
+        "label": "Munkáink",
+          "hu": "Munkáink ",
+          "en": "Our work"
       },
       {
         "href": "#kapcsolat",
-        "label": "Kapcsolat"
+        "label": "Kapcsolat",
+          "hu": "Kapcsolat ",
+          "en": "Contact"
       }
     ]
   },
@@ -47,8 +48,8 @@
     }
   },
   "theme": {
-    "color": "pink",
-    "font": "roboto",
+    "color": "white",
+    "font": "montserrat",
     "darkMode": "light"
   }
 }

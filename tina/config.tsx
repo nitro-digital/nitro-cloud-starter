@@ -211,6 +211,16 @@ const config = defineConfig({
                     label: "Label",
                     name: "label",
                   },
+                  {
+                    type: "string",
+                    label: "hu",
+                    name: "hu",
+                  },
+                  {
+                    type: "string",
+                    label: "en",
+                    name: "en",
+                  },
                 ],
               },
             ],
