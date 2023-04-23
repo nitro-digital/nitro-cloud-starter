@@ -16,26 +16,26 @@
       },
       {
         "href": "solutions",
-          "hu": "Megoldásaink ",
-          "en": "Solutions"
+        "hu": "Megoldásaink ",
+        "en": "Solutions"
       },
       {
         "href": "about",
         "label": "Rólunk",
-          "hu": "Rólunk ",
-          "en": "About us"
+        "hu": "Rólunk ",
+        "en": "About us"
       },
       {
         "href": "works",
         "label": "Munkáink",
-          "hu": "Munkáink ",
-          "en": "Our work"
+        "hu": "Munkáink ",
+        "en": "Our work"
       },
       {
         "href": "contact",
         "label": "Kapcsolat",
-          "hu": "Kapcsolat ",
-          "en": "Contact"
+        "hu": "Kapcsolat ",
+        "en": "Contact"
       }
     ]
   },
@@ -48,7 +48,7 @@
     }
   },
   "theme": {
-    "color": "white",
+    "color": "nitro",
     "font": "montserrat",
     "darkMode": "light"
   }

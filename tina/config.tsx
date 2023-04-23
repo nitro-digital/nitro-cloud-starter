@@ -292,6 +292,10 @@ const config = defineConfig({
                     value: "sans",
                   },
                   {
+                    label: "Montserrat",
+                    value: "montserrat",
+                  },
+                  {
                     label: "Nunito",
                     value: "nunito",
                   },

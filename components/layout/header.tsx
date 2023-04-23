@@ -55,6 +55,7 @@ export const Header = ({ data }) => {
       "border-b-3 border-orange-200 text-orange-700 dark:text-orange-300 font-medium dark:border-orange-700",
     yellow:
       "border-b-3 border-yellow-300 text-yellow-700 dark:text-yellow-300 font-medium dark:border-yellow-600",
+    nitro: "border-b-3 border-white text-white-700 font-medium",
   };
 
   const activeBackgroundClasses = {
@@ -66,6 +67,7 @@ export const Header = ({ data }) => {
     purple: "text-purple-500",
     orange: "text-orange-500",
     yellow: "text-yellow-500",
+    nitro:  "text-white",
   };
 
   // If we're on an admin path, other links should also link to their admin paths
