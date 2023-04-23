@@ -14,20 +14,6 @@ blocks:
     image:
       src: /uploads/Group-27-_1_-_1_.webp
     _template: fullwhero
-  - firstcardimage:
-      src: /uploads/Frame (4).svg
-    firstcardtitle: Kommunikáció és PR
-    firstcardtext: |
-      We can help you with digital marketing plans and projects
-    secundcardimage:
-      src: /uploads/Group 1.svg
-    secundcardtitle: 'Marketing, social és klasszikus média'
-    secundcardtext: |
-      We have an experienced social media manager team
-    image:
-      src: /uploads/Group 28 (2).jpg
-    color: nitrogreen
-    _template: nitrohero
   - items:
       - icon:
           name: Strategymap
@@ -50,6 +36,20 @@ blocks:
 
     color: tint
     _template: features
+  - firstcardimage:
+      src: /uploads/Frame (4).svg
+    firstcardtitle: Kommunikáció és PR
+    firstcardtext: |
+      We can help you with digital marketing plans and projects
+    secundcardimage:
+      src: /uploads/Group 1.svg
+    secundcardtitle: 'Marketing, social és klasszikus média'
+    secundcardtext: |
+      We have an experienced social media manager team
+    image:
+      src: /uploads/Group 28 (2).jpg
+    color: nitrogreen
+    _template: nitrohero
   - headline: Who we are
     title: about us
     body: >
@@ -201,6 +201,7 @@ blocks:
     _template: info
   - _template: googlemaps
 ---
+
 
 
 
