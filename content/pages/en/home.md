@@ -1,7 +1,7 @@
 ---
 title: Home-HU
 blocks:
-  - headline: We have nitro
+  - headline: We have nitro HU
     text: >
       @nitro, we do what it takes to stay ahead of the game. Our dedicated,
       experienced team incorporates innovative ideas and successful strategies
@@ -14,6 +14,28 @@ blocks:
     image:
       src: /uploads/Group-27-_1_-_1_.webp
     _template: fullwhero
+  - items:
+      - icon:
+          name: Strategymap
+          color: teal
+          style: ''
+        title: Stratégia alkotás
+        text: ''
+      - icon:
+          name: Codingicon
+          color: blue
+          style: float
+        title: Tanácsadás
+        text: ''
+      - icon:
+          name: Giticon
+          color: pink
+          style: ''
+        title: Projektmenedzsment
+        text: |+
+
+    color: tint
+    _template: features
   - firstcardimage:
       src: /uploads/Frame (4).svg
     firstcardtitle: Kommunikáció és PR
@@ -28,28 +50,6 @@ blocks:
       src: /uploads/Group 28 (2).jpg
     color: nitrogreen
     _template: nitrohero
-  - items:
-      - icon:
-          name: Strategymap
-          color: ''
-          style: float
-        title: Stratégia alkotás
-        text: ''
-      - icon:
-          name: Codingicon
-          color: blue
-          style: float
-        title: Tanácsadás
-        text: ''
-      - icon:
-          name: Giticon
-          color: ''
-          style: float
-        title: Projektmenedzsment
-        text: |+
-
-    color: tint
-    _template: features
   - headline: Who we are
     title: about us
     body: >
@@ -73,7 +73,7 @@ blocks:
         type: button
         icon: false
         link: /
-        color: slightly
+        color: eclipse
     color: darkcyan
     _template: contactus
   - headline: What we did
@@ -201,6 +201,11 @@ blocks:
     _template: info
   - _template: googlemaps
 ---
+
+
+
+
+
 
 
 

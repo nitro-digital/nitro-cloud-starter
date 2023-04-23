@@ -292,10 +292,6 @@ const config = defineConfig({
                     value: "sans",
                   },
                   {
-                    label: "Montserrat",
-                    value: "montserrat",
-                  },
-                  {
                     label: "Nunito",
                     value: "nunito",
                   },
@@ -306,6 +302,10 @@ const config = defineConfig({
                   {
                     label: "Roboto",
                     value: "roboto",
+                  },
+                  {
+                    label: "Montserrat",
+                    value: "montserrat",
                   },
                 ],
               },
