@@ -1,7 +1,7 @@
 ---
-title: Home-HU
+title: Home-EN
 blocks:
-  - headline: We have nitro HU
+  - headline: We have nitro EM
     text: >
       @nitro, we do what it takes to stay ahead of the game. Our dedicated,
       experienced team incorporates innovative ideas and successful strategies
@@ -201,6 +201,7 @@ blocks:
     _template: info
   - _template: googlemaps
 ---
+
 
 
 
