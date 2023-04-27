@@ -6,8 +6,7 @@ blocks:
       @nitro, we do what it takes to stay ahead of the game. Our dedicated,
       experienced team incorporates innovative ideas and successful strategies
       to ensure that our clients get to the top and stay there. Depends on your
-      ideas we can help you out at 360 degrees of the digital space.\*\*\*
-      \*\*\*
+      ideas we can help you out at 360 degrees of the digital space.
 
 
       ***Tell us your needs. (hu)***
@@ -201,6 +200,7 @@ blocks:
     _template: info
   - _template: googlemaps
 ---
+
 
 
 
