@@ -9,7 +9,7 @@ blocks:
       ideas we can help you out at 360 degrees of the digital space.
 
 
-      ***Tell us your needs. (hu)***
+      ***Tell us your needs. (EN)***
     image:
       src: /uploads/Group-27-_1_-_1_.webp
     _template: fullwhero
@@ -200,6 +200,7 @@ blocks:
     _template: info
   - _template: googlemaps
 ---
+
 
 
 
