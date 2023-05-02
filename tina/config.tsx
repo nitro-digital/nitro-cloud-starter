@@ -6,6 +6,7 @@ import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { infoBlockSchema } from "../components/blocks/info";
 import { ColorPickerInput } from "../components/fields/color";
 import { iconSchema } from "../components/util/icon";
+
 import { fullwheroBlockSchema } from '../components/blocks/fullwhero';
 import { nitroheroBlockSchema } from '../components/blocks/nitrohero';
 import { contactusBlockSchema } from "../components/blocks/contactus";
@@ -403,8 +404,8 @@ const config = defineConfig({
               infoBlockSchema,
               fullwheroBlockSchema,
               nitroheroBlockSchema,
-              contactusBlockSchema,
               solutionsBlockSchema,
+              contactusBlockSchema,
               workstabBlockSchema,
               googlemapsBlockSchema
             ],
