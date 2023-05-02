@@ -8,7 +8,7 @@ blocks:
       metaverse to the classic web).
 
 
-      We are looking for challenges in which we can think together with our
+      HU\_We are looking for challenges in which we can think together with our
       customers. We believe in partnership, to deliver stable solutions: whether
       it’s a marketing campaign, a static website, or even a more sophisticated,
       web-based solution.
@@ -28,6 +28,8 @@ blocks:
     color: lightgray
     _template: contactus
 ---
+
+
 
 
 
